@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+}
+#header{
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    width: 100%;
+    align-items: center;
+    background-color:#f3f3f3;
+}
+.logo{
+    width:60vw;
+    float: left;
+   
+}
+.logo-image{
+    width:300px;
+  
+}
+#nav-bar{
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+}
+
+.nav-link{
+    list-style-type: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    width:150px;
+}
+.nav-tabs{
+    display: flex;
+    justify-content: space-around;
+   
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+  
+}
+form{
+    display: block;
+    padding-top: 80px;
+    text-align: center;
+}
+.main{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+input{
+    width: 300px;
+    display:inline-block ;
+    margin-bottom: 20px;
+    align-items: center;
+   padding: 5px;
+   padding-left: 7px;
+}
+.button{
+    display:block;
+    margin-bottom:20px ;
+}
+button{
+    background-color: rgb(255, 179, 0);
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 800;
+}
+button:hover{
+    background-color: rgb(255, 123, 0);
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero{
+display: flex;
+ align-items: center;
+}
+#features{
+    margin-top: 50px;
+}
+.items{
+    height: 125px;
+    width:20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.items img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    color: darkorange;
+}
+.flames img{
+    width:80px;
+    
+}
+.content{
+    width:80vw;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    
+}
+#work,#pricing{
+    margin: 50px auto;
+    text-align: center;
+}
+.vedio iframe{
+    width: 600px;
+    height: 320px;
+}
+#pricing{
+    display: flex;
+    justify-content: space-around;
+}
+.price{
+    border: 1px solid black;
+    border-radius: 2px;
+    width:calc(100%/3);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.price div:nth-child(1){
+    height: 50px;
+    padding: 15px 0;
+    background-color: rgb(213, 212, 212);
+    margin:0;
+}
+.price h2{
+    margin-top: 20px;
+}
+.price ol{
+    
+    list-style-type: none;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.buton{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.buton button{
+    width:150px;
+}
+footer{
+    text-align: right;
+    padding-right: 20px;
+    height: 75px;
+    background-color:rgb(213, 212, 212) ;
+}
+footer ul{
+    padding-top: 20px;
+}
+footer li{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: inline;
+}
+footer p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color:rgb(43, 43, 43);
+}
+@media(max-width:750px){
+    #pricing{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .price{
+        width: calc(100%/2.5);
+    }
+    
+    .nav-tabs{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .nav-link{
+        font-size:18px ;
+    }
+    #header{
+        flex-direction: column;
+        height: 120px;
+        background-color: #f3f3f3;
+        padding: 5px 0;
+    }
+    .logo{
+        align-self: start;
+    }
+    .logo-image{
+        width:230px;
+    }
+    form{
+        padding-top: 140px;
+    }
+    .vedio iframe{
+        width:450px;
+        height:250px;
+    }
+}
